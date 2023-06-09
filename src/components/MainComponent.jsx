@@ -1,12 +1,17 @@
 import FactList from "./FactList";
 import CategoryFilter from "./CategoryFilter";
+import Loader from "./Loader";
 
-function MainComponent({ facts }) {
+function MainComponent({ facts, isLoading, setCurCategory, setFacts }) {
   return (
     <>
       <main className="main">
-        <CategoryFilter />
-        <FactList facts={facts} />
+        <CategoryFilter setCurCategory={setCurCategory} />
+        {isLoading ? (
+          <Loader />
+        ) : (
+          <FactList facts={facts} setFacts={setFacts} />
+        )}
       </main>
     </>
   );
