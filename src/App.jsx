@@ -1,13 +1,22 @@
+import "./style.css";
+import Header from "./components/Header";
+import NewFactForm from "./components/NewFactForm";
+import MainComponent from "./components/MainComponent";
 import { useState } from "react";
+import { initialFacts } from "./utils/data";
 
-function App() {
-  const [count, setCount] = useState(0);
-
+const App = () => {
+  const [showForm, setShowForm] = useState(false);
+  const [facts, setFacts] = useState(initialFacts);
   return (
     <>
-      <h1>Hello</h1>
+      <Header setShowForm={setShowForm} showForm={showForm} />
+      {showForm && (
+        <NewFactForm setFacts={setFacts} setShowForm={setShowForm} />
+      )}
+      <MainComponent facts={facts} />
     </>
   );
-}
+};
 
 export default App;
