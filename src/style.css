@@ -297,7 +297,7 @@ ul {
   .category {
     margin: 10px 10px 16px 0;
   }
-  .category:first-child() {
+  .category:nth-child(1) {
     margin-left: 10px;
   }
   .categories {
