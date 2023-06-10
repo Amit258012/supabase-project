@@ -35,6 +35,7 @@ const App = () => {
     },
     [curCategory]
   );
+
   return (
     <>
       <Header setShowForm={setShowForm} showForm={showForm} />
@@ -47,6 +48,12 @@ const App = () => {
         isLoading={isLoading}
         setCurCategory={setCurCategory}
       />
+      <p
+        style={{
+          margin: "10px auto",
+        }}>
+        Amit Jahagirdar
+      </p>
     </>
   );
 };

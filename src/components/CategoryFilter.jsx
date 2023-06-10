@@ -3,7 +3,7 @@ import { CATEGORIES } from "../utils/data.js";
 function CategoryFilter({ setCurCategory }) {
   return (
     <aside>
-      <ul>
+      <ul className="categories">
         <li className="category">
           <button
             className="btn btn-all-categories"

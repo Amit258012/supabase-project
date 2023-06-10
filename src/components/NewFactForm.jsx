@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { CATEGORIES } from "../utils/data";
+import supabase from "../supabase";
 
 function isValidHttpUrl(string) {
   let url;
