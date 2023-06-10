@@ -48,12 +48,6 @@ const App = () => {
         isLoading={isLoading}
         setCurCategory={setCurCategory}
       />
-      <p
-        style={{
-          margin: "10px auto",
-        }}>
-        Amit Jahagirdar
-      </p>
     </>
   );
 };

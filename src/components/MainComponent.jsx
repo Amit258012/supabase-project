@@ -12,6 +12,9 @@ function MainComponent({ facts, isLoading, setCurCategory, setFacts }) {
         ) : (
           <FactList facts={facts} setFacts={setFacts} />
         )}
+        <a href="https://github.com/Amit258012" className="footer">
+          Amit Jahagirdar
+        </a>
       </main>
     </>
   );
